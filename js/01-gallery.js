@@ -32,7 +32,9 @@ function onEscKeyPress(evt) {
   }
 }
 function closeModalWindow() {
+  const instance = basicLightbox.create("");
   instance.close();
+  window.removeEventListener("keydown", onEscKeyPress);
 }
 
 function createGalaryItem(galleryItems) {
@@ -52,4 +54,3 @@ function createGalaryItem(galleryItems) {
     })
     .join("");
 }
-// console.log(createGalaryItem(galleryItems));
