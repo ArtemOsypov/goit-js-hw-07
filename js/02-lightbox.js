@@ -6,7 +6,7 @@ console.log(galleryItems);
 const galary = document.querySelector(".gallery");
 const imageItem = createGalaryItem(galleryItems);
 galary.insertAdjacentHTML("beforeend", imageItem);
-// const items = document.querySelectorAll("gallery__item");
+
 galary.addEventListener("click", onGalaryClick);
 
 function createGalaryItem(galleryItems) {
